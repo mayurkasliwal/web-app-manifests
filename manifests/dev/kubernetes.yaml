@@ -30,9 +30,10 @@ spec:
     spec:
       containers:
       - name: hello-cloudbuild
-        image: gcr.io/cloud-studio-369512/my-repository/hello-cloudbuild:556af31
+        image: gcr.io/cloud-studio-369512/my-repository/hello-cloudbuild:6f6a9b3
         ports:
         - containerPort: 8080
+      serviceAccountName: readonly-sa 
 ---
 kind: Service
 apiVersion: v1

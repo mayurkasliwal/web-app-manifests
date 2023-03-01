@@ -30,10 +30,12 @@ spec:
     spec:
       containers:
       - name: hello-cloudbuild
-        image: gcr.io/cloud-studio-369512/my-repository/hello-cloudbuild:6f6a9b3
+        image: gcr.io/cloud-studio-369512/my-repository/hello-cloudbuild:842600e
         ports:
         - containerPort: 8080
-      serviceAccountName: readonly-sa 
+      serviceAccountName: readonly-sa
+      nodeSelector:
+        iam.gke.io/gke-metadata-server-enabled: "true"
 ---
 kind: Service
 apiVersion: v1

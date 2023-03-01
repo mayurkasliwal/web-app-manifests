@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: hello-cloudbuild
-        image: gcr.io/cloud-studio-369512/my-repository/hello-cloudbuild:d12ccdc
+        image: gcr.io/cloud-studio-369512/my-repository/hello-cloudbuild:2b16464
         ports:
         - containerPort: 8080
 ---
